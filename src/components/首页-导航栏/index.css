@@ -1,0 +1,192 @@
+@import "../../css/base.css";
+@import "//at.alicdn.com/t/font_2253525_zxxxp9odeg8.css";
+#nav-bar {
+  height: 140px;
+  background-color: #fff;
+}
+#nav-bar .content {
+  height: 100%;
+  /*background-color: cyan;*/
+  display: flex;
+  flex-direction: column;
+  /*把box模型的列改为行*/
+}
+#nav-bar .content .top {
+  /* background-color: green;*/
+  display: flex;
+  flex: 1;
+}
+#nav-bar .content .top > .left {
+  /*background-color: green;*/
+  flex: 1;
+}
+#nav-bar .content .top > .left .logo {
+  width: 193px;
+  height: 65px;
+  margin: 0;
+  /*外边距*/
+}
+#nav-bar .content .top > .left a {
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  display: block;
+  background-color: black;
+  /*background-image: url();*/
+  background-size: contain;
+  /*表示背景图片包含在内*/
+  background-position: center center;
+  /*表示背景图片居中*/
+  background-repeat: no-repeat;
+  /*表示背景图片不平铺*/
+}
+#nav-bar .content .top > .center {
+  /*background-color: cyan;*/
+  flex: 2;
+}
+#nav-bar .content .top > .center .search-bar {
+  width: 400px;
+  height: 40px;
+  /*justify-content: center;
+          align-items: center;*/
+  /*background-color:darkcyan;*/
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 1px solid #999;
+  /*固定边框像素为1 颜色为灰色 */
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  /*把盒子里面的因素露出来的隐藏起来 overflow表示：露出  hidden表示：隐藏*/
+}
+#nav-bar .content .top > .center .category {
+  flex: 1;
+  border-top-left-radius: 20px;
+  /*左上圆角像素为20*/
+  border-bottom-left-radius: 20px;
+  /* background-color: cyan;*/
+}
+#nav-bar .content .top > .center .category select {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  /*外边框没有*/
+  padding-left: 10px;
+  /*内边距为10像素*/
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-size: 15px;
+  color: #666;
+  /* background-color: black;*/
+}
+#nav-bar .content .top > .center .keyword {
+  flex: 4;
+  /* background-color:darkcyan;*/
+}
+#nav-bar .content .top > .center .keyword input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 0 0 10px;
+  font-size: 13px;
+  color: #666;
+}
+#nav-bar .content .top > .center .submit-btn {
+  flex: 1;
+  /*background-color:yellow;*/
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#nav-bar .content .top > .center .submit-btn .iconfont {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-top-right-radius: 20px;
+  /*右上角添圆角边框：*/
+  border-bottom-right-radius: 20px;
+  /*右下角添圆角边框*/
+  background-color: #51b257;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+  /*小手样式*/
+}
+#nav-bar .content .top > .right {
+  /*background-color: red;*/
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+#nav-bar .content .top > .right .intro {
+  height: 60px;
+  background-color: cyan;
+  width: fit-content;
+  position: relative;
+  /*定位流：相对定位*/
+  /*******************点击出现下拉页面********************/
+}
+#nav-bar .content .top > .right .intro:hover .operation-pace {
+  /*选择器前面不要加空格，空格表示后代关系*/
+  display: block;
+}
+#nav-bar .content .top > .right .intro .user {
+  height: 32px;
+  background-color: red;
+  width: fit-content;
+  /*适应这个内容*/
+  display: flex;
+  align-items: center;
+}
+#nav-bar .content .top > .right .intro .user .nick-name {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #666;
+}
+#nav-bar .content .top > .right .intro .user .header {
+  height: 32px;
+  width: 32px;
+  background-color: green;
+  border-radius: 16px;
+}
+#nav-bar .content .top > .right .intro .operation-pace {
+  width: 160px;
+  height: 100px;
+  background-color: yellow;
+  position: absolute;
+  /*绝对定位*/
+  z-index: 999;
+  /*图像的堆叠顺序越来越高 反应图像在文字的前面还是后面*/
+  border: 1px solid #eee;
+  /*边框*/
+  right: 0;
+  top: 50px;
+  display: none;
+  /*color: pink;*/
+  box-shadow: 0px -1px 12px 3px grey;
+  /*background-color:pink;*/
+}
+#nav-bar .content .top > .right .intro .operation-pace ::after {
+  content: "";
+  border: 10px solid transparent;
+  border-bottom-color: red;
+  position: absolute;
+  right: 10px;
+  top: -20px;
+}
+#nav-bar .content .bottom {
+  background-color: pink;
+  height: 40px;
+  display: flex;
+}
+#nav-bar .content .bottom .left {
+  background-color: deeppink;
+  flex: 1;
+}
+#nav-bar .content .bottom .right {
+  background-color: palegreen;
+  flex: 1;
+}
+/*# sourceMappingURL=index.css.map */
